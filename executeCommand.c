@@ -3,7 +3,7 @@
 #define MAX_INPUT_LENGTH 256
 
 /**
- * executeCommand - It is responsible for executing a 
+ * executeCommand - It is responsible for executing a
  *                  command on a Unix or Linux system.
  * @command: string of input
  */
@@ -39,7 +39,7 @@ void executeCommand(const char *command)
 	{
 		perror("Error when creating a child process");
 		exit(EXIT_FAILURE);
-	} 
+	}
 	else if (child_pid == 0)
 	{
 		execvp(copyCommand, args);
@@ -62,7 +62,7 @@ void printEnvironment()
     extern char **environ;
     char **env = environ;
 
-    while (*env != NULL) 
+    while (*env != NULL)
     {
         printf("%s\n", *env);
         env++;
