@@ -8,6 +8,7 @@
  * main - Creates an interactive loop in which the 
  *        user can enter commands and receive responses 
  *        from the program.
+ * Return: Always 0.
  */
 int main()
 {
