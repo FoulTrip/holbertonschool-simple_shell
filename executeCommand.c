@@ -2,6 +2,11 @@
 
 #define MAX_INPUT_LENGTH 256
 
+/**
+ * executeCommand - It is responsible for executing a 
+ *                  command on a Unix or Linux system.
+ * @command: string of input
+ */
 void executeCommand(const char *command)
 {
 	const char *delimiter = " ";
