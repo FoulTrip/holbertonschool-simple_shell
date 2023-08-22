@@ -7,7 +7,6 @@
 int main()
 {
 	char input[MAX_INPUT_LENGTH];
-	printf("SIMPLE SHELL by: FoulTrip\n");
 
 	while (1)
 	{
