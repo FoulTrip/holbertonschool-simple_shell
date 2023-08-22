@@ -4,13 +4,18 @@
 
 #define MAX_INPUT_LENGTH 256
 
+/**
+ * main - Creates an interactive loop in which the 
+ *        user can enter commands and receive responses 
+ *        from the program.
+ */
 int main()
 {
 	char input[MAX_INPUT_LENGTH];
 
 	while (1)
 	{
-		fputs("", stdout);
+		printf("$ ");
 		fflush(stdout);
 
 		if (fgets(input, sizeof(input), stdin) == NULL)
