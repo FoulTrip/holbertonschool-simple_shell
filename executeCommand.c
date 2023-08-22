@@ -54,6 +54,9 @@ void executeCommand(const char *command)
 
 }
 
+/**
+ * printEnvironment - Prints the system environment variables.
+ */
 void printEnvironment()
 {
     extern char **environ;
