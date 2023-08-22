@@ -10,7 +10,6 @@ int main()
 
 	while (1)
 	{
-		printf("");
 		printf("(stdout)\n");
 		fflush(stdout);
 
