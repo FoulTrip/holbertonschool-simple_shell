@@ -10,7 +10,7 @@ int main()
 
 	while (1)
 	{
-		fputs("", stdout)
+		fputs("", stdout);
 		fflush(stdout);
 
 		if (fgets(input, sizeof(input), stdin) == NULL)
