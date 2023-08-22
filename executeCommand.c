@@ -1,4 +1,4 @@
-#include "../include/executeCommand.h"
+#include "executeCommand.h"
 
 #define MAX_INPUT_LENGTH 256
 
