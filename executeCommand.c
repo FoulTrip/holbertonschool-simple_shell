@@ -41,6 +41,8 @@ void executeCommand(char *command)
 			}
 		}
 		execve(args[0], args, environ);
+		if (args[0] == NULL)
+			exit(2);
 		perror("./shell");
 		exit(EXIT_FAILURE);
 	}
