@@ -42,7 +42,14 @@ int main()
 		if (strcmp(input, "exit") == 0)
 		{
 			free(input);
-			exit(2);
+			if (argIndex == 0)
+			{
+				exit (0);
+			}
+			else
+			{
+				exit (2);
+			}
 		}
 		else if (strcmp(input, "env") == 0)
 		{
