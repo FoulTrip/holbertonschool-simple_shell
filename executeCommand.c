@@ -28,7 +28,7 @@ void executeCommand(char *command)
 	{
 		perror("Error when creating a child process");
 		free(command);
-		exit(EXIT_FAILURE);
+		exit(2);
 	}
 	else if (child_pid == 0)
 	{
@@ -42,13 +42,25 @@ void executeCommand(char *command)
 		}
 		execve(args[0], args, NULL);
 		perror("./shell");
-		exit(EXIT_FAILURE);
+		exit(1);
 	}
 	else
 	{
 		int status;
 		wait(&status);
-	}
+
+		if (WIFEXITED(status))
+                {
+			if (WEXITSTATUS(status) == 1)
+                        {
+				printf("Command execution failed.\n");
+                        } 
+                        else if (WEXITSTATUS(status) == 2)
+                        {
+				free(command);
+                                exit(2);
+                        } 
+        }	}
 
 }
 
