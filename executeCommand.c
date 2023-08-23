@@ -28,7 +28,7 @@ void executeCommand(char *command)
 	{
 		perror("Error when creating a child process");
 		free(command);
-		exit(EXIT_FAILURE);
+		exit(2);
 	}
 	else if (child_pid == 0)
 	{
@@ -42,7 +42,7 @@ void executeCommand(char *command)
 		}
 		execve(args[0], args, environ);
 		perror("./shell");
-		exit(EXIT_FAILURE);
+		exit(1);
 	}
 	else
 	{
