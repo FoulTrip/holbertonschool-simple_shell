@@ -1,33 +1,22 @@
 #include "executeCommand.h"
 
-#define MAX_INPUT_LENGTH 256
-
 /**
  * executeCommand - It is responsible for executing a
  *                  command on a Unix or Linux system.
  * @command: string of input
  */
-void executeCommand(const char *command)
+void executeCommand(char *command)
 {
 	const char *delimiter = " ";
-	char *copyCommand = strtok(strdup(command), delimiter);
+	char *token;
 	pid_t child_pid;
-	int argIndex = 1;
-	char *args[MAX_INPUT_LENGTH / 2];
-	args[0] = copyCommand;
+	int argIndex = 0;
+	char *args[20];
+	args[0] = NULL;
 
-	if (copyCommand == NULL)
+	for (token = strtok(command, delimiter); token != NULL; token = strtok(NULL, delimiter))
 	{
-		return;
-	}
-
-	while (argIndex < MAX_INPUT_LENGTH / 2)
-	{
-		args[argIndex] = strtok(NULL, delimiter);
-		if (args[argIndex] == NULL)
-		{
-			break;
-		}
+		args[argIndex] = token;
 		argIndex++;
 	}
 
@@ -38,12 +27,13 @@ void executeCommand(const char *command)
 	if (child_pid == -1)
 	{
 		perror("Error when creating a child process");
+		free(command);
 		exit(EXIT_FAILURE);
 	}
 	else if (child_pid == 0)
 	{
-		execvp(copyCommand, args);
-		perror("Error executing command");
+		execve(args[0], args, NULL);
+		perror("./shell");
 		exit(EXIT_FAILURE);
 	}
 	else
