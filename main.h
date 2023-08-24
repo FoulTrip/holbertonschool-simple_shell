@@ -10,7 +10,7 @@
 extern char **environ;
 
 void executeCommand(char *command);
-void printEnvironment();
+void printEnvironment(void);
 bool findExecutable(char *command, char *fullPath);
 
 #endif
