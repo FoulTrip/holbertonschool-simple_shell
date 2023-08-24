@@ -45,6 +45,4 @@ The Custom Shell is divided into several modules:
  - printEnv.c: This file defines the printEnvironment function, which prints the system environment variables.
 
 # Contributions
-This project was made possible thanks to the collaborative efforts of:
-[David Vasquez](https://github.com/FoulTrip): Developed the initial shell functionality and main loop.
-[Ricardo Valdes](https://github.com/ricardovaldesv): Implemented the command execution and environment printing functions.
+This project was made possible thanks to the collaborative efforts of [David Vasquez](https://github.com/FoulTrip): Developed the initial shell functionality and main loop and [Ricardo Valdes](https://github.com/ricardovaldesv): Implemented the command execution and environment printing functions.
