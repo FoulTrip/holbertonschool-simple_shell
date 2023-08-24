@@ -39,7 +39,7 @@ void executeCommand(char *command)
 		}
 		if (execve(args[0], args, environ) == -1)
 		{
-			perror("./shell");
+			perror("./hsh");
 			exit(EXIT_FAILURE);
 		}
 	}
