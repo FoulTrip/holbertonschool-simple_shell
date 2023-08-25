@@ -9,7 +9,7 @@ Is a simple Unix/Linux shell implementation that allows users to execute command
  - Environment Variable Printing: The shell can display the system's environment variables using the "env" command.
 
 # Structure Shell
-![flowchart](https://github.com/foultrip/holbertonschool-simple_shell/blob/master/images/Flowchart.svg](https://github.com/foultrip/holbertonschool-simple_shell/blob/main/images/Flowchart.svg)
+![flowchart](https://github.com/foultrip/holbertonschool-simple_shell/blob/master/images/Flowchart.svg)
 
 # Getting Started
 To compile and run the Custom Shell on your system, follow these steps:
