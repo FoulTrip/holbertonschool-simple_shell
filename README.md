@@ -1,15 +1,16 @@
 # Custom Shell
 Is a simple Unix/Linux shell implementation that allows users to execute commands and interact with the system. This shell is developed in C and provides a basic command-line interface for users to input commands and receive responses from the program.
 
+# Structure Shell
+
+![flowchart](https://github.com/foultrip/holbertonschool-simple_shell/blob/master/images/Flowchart.svg)
+
 # Features
  - Interactive Command Execution: Users can enter commands in the shell and receive responses from the program.
 
  - Command Execution: The shell can execute various system commands entered by the user.
 
  - Environment Variable Printing: The shell can display the system's environment variables using the "env" command.
-
-# Structure Shell
-![flowchart](https://github.com/foultrip/holbertonschool-simple_shell/blob/master/images/Flowchart.svg)
 
 # Getting Started
 To compile and run the Custom Shell on your system, follow these steps:
