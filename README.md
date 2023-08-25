@@ -3,7 +3,7 @@ Is a simple Unix/Linux shell implementation that allows users to execute command
 
 # Structure Shell
 
-![flowchart](https://github.com/foultrip/holbertonschool-simple_shell/blob/master/images/Flowchart.svg)
+![flowchart](https://github.com/FoulTrip/holbertonschool-simple_shell/blob/main/images/Shell.png)
 
 # Features
  - Interactive Command Execution: Users can enter commands in the shell and receive responses from the program.
